@@ -17,7 +17,7 @@
 		<div class="container w-100 mx-auto">
 			<div class="row w-100 m-auto mt-4">
 				<div class="col-md-6">
-					<h2>This is left side</h2>
+					<h2>Search For Player</h2>
 					<div class="input-group mb-3">
 						<input
 							id="search-box"
@@ -28,17 +28,40 @@
 							aria-describedby="button-addon2"
 						/>
 						<button
-							onclick="showPlayer()"
+							onclick="allPlayer()"
 							class="btn btn-outline-secondary"
 							type="button"
 							id="search-btn"
 						>
 							Search
 						</button>
+						<!-- Playeer -->
+						<div
+							id="player-container"
+							class="player-container text-center"
+						></div>
 					</div>
+					<img id="spinner" src="./spinner.gif" alt="" />
 				</div>
+
 				<div class="col-md-6">
-					<h2>Right side</h2>
+					<h2>Player Details</h2>
+					<img
+						style="display: none"
+						id="female"
+						src="./img/female.jpg"
+						alt=""
+					/>
+					<img
+						style="display: none"
+						id="male"
+						src="./img/male.jpeg"
+						alt=""
+					/>
+					<div
+						id="player-details"
+						class="player-details text-center"
+					></div>
 				</div>
 			</div>
 		</div>
